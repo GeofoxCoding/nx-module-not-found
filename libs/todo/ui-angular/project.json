@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/todo/ui-angular",
+  "sourceRoot": "libs/todo/ui-angular/src",
+  "prefix": "todo-ui-angular",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/todo/ui-angular"],
+      "options": {
+        "jestConfig": "libs/todo/ui-angular/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/todo/ui-angular/src/**/*.ts",
+          "libs/todo/ui-angular/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["ui"]
+}

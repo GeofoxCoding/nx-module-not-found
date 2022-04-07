@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@wibas/todo-data-access": ["libs/todo/data-access/src/index.ts"],
+      "@wibas/todo-ui-angular": ["libs/todo/ui-angular/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

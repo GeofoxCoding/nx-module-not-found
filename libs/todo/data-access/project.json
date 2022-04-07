@@ -1,0 +1,22 @@
+{
+  "root": "libs/todo/data-access",
+  "sourceRoot": "libs/todo/data-access/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/todo/data-access/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/todo/data-access"],
+      "options": {
+        "jestConfig": "libs/todo/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["data-access"]
+}

@@ -1,0 +1,28 @@
+{
+  "root": "apps/todo/todo-viewer-angular-e2e",
+  "sourceRoot": "apps/todo/todo-viewer-angular-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/todo/todo-viewer-angular-e2e/cypress.json",
+        "devServerTarget": "todo-viewer-angular:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "todo-viewer-angular:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/todo/todo-viewer-angular-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["todo-viewer-angular"]
+}

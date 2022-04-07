@@ -1,4 +1,10 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "todo-api": "apps/todo/todo-api",
+    "todo-data-access": "libs/todo/data-access",
+    "todo-todo-viewer-angular-e2e": "apps/todo/todo-viewer-angular-e2e",
+    "todo-ui-angular": "libs/todo/ui-angular",
+    "todo-viewer-angular": "apps/todo/todo-viewer-angular"
+  }
 }
